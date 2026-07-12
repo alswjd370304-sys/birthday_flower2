@@ -1,0 +1,84 @@
+/* index.css */
+body {}
+main {
+    width: 402px; min-height: 874px;
+    background-image: url(../images/bg.jpg);
+    background-size: 100% auto;
+    margin: 0 auto;
+    position: relative;
+}
+/* --------------------------------------------------title */
+main .title {
+    text-align: center;
+    padding: 150px 0 0;
+    margin-bottom: 198px;
+}
+main .title *{}
+main .title p {
+    margin-bottom: 8px;
+    font-size: 0.75em;
+}
+main .title h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+/* ---------------------------------------------------contents */
+main form[name^=con] .birthday_g {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap:9px;
+}
+main form[name^=con] .birthday_g * {
+    width: 300px; height: 42px;
+    border-radius: 8px;
+    font-size: 0.875em;
+}
+main form[name^=con] .birthday_g #birthday_write {
+    border: 1px solid #000;
+    text-align: center;
+    color: #000;
+}
+main form[name^=con] .birthday_g #birthday_write::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+main form[name^=con] .birthday_g #birthday_write:focus {
+    border-color: #F2AFAF;
+}
+main form[name^=con] .birthday_g #birthday_flower {
+    background-color: #504848;
+    color: #fff;
+}
+/* ---------------------------------------------------popup */
+main .popup_wrap {
+    width: 277px; height: 217px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px;
+    border-radius: 15px;
+    padding: 50px 0 0 0;
+    position: absolute; left:16%; top: 38%;
+    z-index: 999;
+}
+main .popup_wrap em {
+    font-weight: 600;
+}
+main .popup_wrap p:nth-child(1) {
+    font-size: 0.75em;
+    letter-spacing: -0.02em;
+}
+main .popup_wrap p:nth-child(2) {}
+main .popup_wrap p:nth-child(3) {
+    line-height: 1.5;
+    text-align: center;
+}
+main .popup_bg {
+    width: 402px; height: 874px;
+    background-color: rgba(0, 0, 0, 0.33);
+    position: absolute; left: 0; top:0;
+    z-index: 900;
+}

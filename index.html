@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/4148/4148023.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="./script/index.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="title">
+            <p>The Flower of My Birth Day</p>
+            <h1>나의 탄생화 찾기</h1>
+        </div><!-- e:top -->
+        <form action="#" method="post" name="contents" id="contents">
+            <fieldset class="birthday_g">
+                <legend>생일 입력 및 꽃말 버튼</legend>
+                <input type="text" name="birthday_write" id="birthday_write" placeholder="태어난 달을 입력해주세요." onclick="birthday_month_write()" autofocus>
+                <button type='button' id="birthday_flower" onclick="popup_open()">나의 꽃과 꽃말 만나기</button>
+            </fieldset><!-- e:birthday_g -->
+        </form><!-- e:contents-->
+        <div class="popup_wrap">
+            <p>birthday Month 12</p>
+            <p><em>꽃말 :</em> 자기애, 자존심, 외로움</p>
+            <p>당신의 탄생화는<br><em>'수선화'</em>입니다.</p>
+        </div>
+        <div class="popup_bg" onclick="popup_hide()"></div>
+    </main>
+</body>
+</html>

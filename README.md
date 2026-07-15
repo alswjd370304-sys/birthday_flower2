@@ -36,4 +36,4 @@
     * `em * {}`은 em의 모든 자식(popup_wrap의 자손까지)들을 선택하겠다는 의미가 됨.
 5. 12/13:50 `document.querySelector()`미입력, 입력 후 변수 작성.
     * `document.querySelector()`는 HTML 파일에서 ()안에 값을 찾아 JS에 가져온다는 뜻.
-    * `birthday_month.vaule = '12';`이 아닌 vaule를 기입하지 않고 값 12작성하여 출력되지 않는 오류가 발생. 위 내용을 해석하면 birthday_month가 가지는 속성 .vaule에 12라는 값을 넣는다라는 의미가 되므로 실제 사용자가 입력하는 값인.vaule 속성을 넣어 js를 수정함.
+    * `birthday_month.value = '12';`이 아닌 value를 기입하지 않고 값 12작성하여 출력되지 않는 오류가 발생. 위 내용을 해석하면 birthday_month가 가지는 속성 .value에 12라는 값을 넣는다라는 의미가 되므로 실제 사용자가 입력하는 값인.value 속성을 넣어 js를 수정함.

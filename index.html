@@ -17,15 +17,17 @@
             <p>The Flower of My Birth Day</p>
             <h1>나의 탄생화 찾기</h1>
         </div><!-- e:top -->
-        <form action="#" method="post" name="contents" id="contents">
+        <form action="#" method="post" name="contents" id="contents"> <!-- form은 버튼의 타입이 submit이거나 서버로 전송할 때만 사용 -->
             <fieldset class="birthday_g">
                 <legend>생일 입력 및 꽃말 버튼</legend>
-                <input type="text" name="birthday_write" id="birthday_write" placeholder="태어난 달을 입력해주세요." onclick="birthday_month_write()" autofocus>
-                <button type='button' id="birthday_flower" onclick="popup_open()">나의 꽃과 꽃말 만나기</button>
+                <input type="number" maxlength="2" name="birthday_write" id="birthday_write" placeholder="태어난 달을 입력해주세요." onclick="birthday_month_write()" autofocus required>
+                <button type="button" id="birthday_flower" onclick="popup_open()">나의 꽃과 꽃말 만나기</button>
             </fieldset><!-- e:birthday_g -->
         </form><!-- e:contents-->
+        <!-- (위) 버튼 클릭 시 실행 결과 팝업창 -->
         <div class="popup_wrap">
-            <p>birthday Month 12</p>
+            <p>birthday Month 12</p> <!-- 12는 span으로 묶는게 좋음-> 바뀌기 때문 -->
+            <!-- 의미 있는 이름도 주기 -->
             <p><em>꽃말 :</em> 자기애, 자존심, 외로움</p>
             <p>당신의 탄생화는<br><em>'수선화'</em>입니다.</p>
         </div>
